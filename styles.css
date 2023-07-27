@@ -1,0 +1,26 @@
+body {
+    background-color: navy;
+    color: gray;
+}
+
+header {
+    text-align: center;
+}
+
+form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+}
+
+fieldset {
+    border: 1px;
+    padding: 2rem 0;
+    border-bottom: 3px solid #3b3b4f;
+}
+
+input, textarea, select {
+  margin: 10px 0 0 0;
+  width: 100%;
+}

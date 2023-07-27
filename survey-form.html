@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <h1 id="title">This is not a Survey Form</h1>
+        <p id="description">But thank you anyways for taking your time on filling this page</p>
+    </head>
+    <body>
+        <fieldset class="bodybox"><form id="survey-form">
+            <label id="name-label">Please enter your full name: <input id="name" type="text" placeholder="eg. Tiyo Paso" required /></label>
+            <label id="email-label">Please enter your email address: <input id="email" type="email" placeholder="eg. tiyopaso@example.com" required /></label>
+            <label id="numebr-label">Please enter your current age (as of this year): <input id="number" type="number" min="18" max="75" placeholder="eg. 25" /></label>
+        </fieldset>
+        <fieldset>
+            <label>What kind of device are you using right now?
+                <select id="dropdown">
+                    <option>(select one)</option>
+                    <option>Smartphone</option>
+                    <option>Computer/Laptop</option>
+                    <option>Other</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label>Please select your dietary preference: </label>
+                <label>Muslim <input type="radio" /></label>
+                <label>Vegetarian <input type="radio" /></label>
+                <label>No Preference <input type="radio" /></label>
+        </fieldset>
+        </form>
+    </body>
+    <footer>
+
+    </footer>
+</html>
