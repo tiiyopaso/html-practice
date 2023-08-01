@@ -3,18 +3,23 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="styles.css">
+        <fieldset>
         <h1 id="title">This is not a Survey Form</h1>
         <p id="description">But thank you anyways for taking your time on filling this page</p>
+        </fieldset>
     </head>
+
+
     <body>
-        <fieldset class="bodybox"><form id="survey-form">
-            <label id="name-label">Please enter your full name: <input id="name" type="text" placeholder="eg. Tiyo Paso" required /></label>
-            <label id="email-label">Please enter your email address: <input id="email" type="email" placeholder="eg. tiyopaso@example.com" required /></label>
-            <label id="numebr-label">Please enter your current age (as of this year): <input id="number" type="number" min="18" max="75" placeholder="eg. 25" /></label>
+        <fieldset class="bodybox">
+            <form id="survey-form" method="post" action="fakelinkaswell.tiyopaso.com" >
+            <label id="name-label">Please enter your full name: <input class="boxes" id="name" type="text" placeholder="eg. Tiyo Paso" required /></label>
+            <label id="email-label">Please enter your email address: <input class="boxes" id="email" type="email" placeholder="eg. tiyopaso@example.com" required /></label>
+            <label id="numebr-label">Please enter your current age (as of this year): <input class="boxes" id="number" type="number" min="18" max="75" placeholder="eg. 25" /></label>
         </fieldset>
         <fieldset>
             <label>What kind of device are you using right now?
-                <select id="dropdown">
+                <select>
                     <option>(select one)</option>
                     <option>Smartphone</option>
                     <option>Computer/Laptop</option>
@@ -22,15 +27,30 @@
                 </select>
             </label>
         </fieldset>
+
         <fieldset>
             <label>Please select your dietary preference: </label>
-                <label>Muslim <input type="radio" /></label>
-                <label>Vegetarian <input type="radio" /></label>
-                <label>No Preference <input type="radio" /></label>
+                <label for="nopref-food" >No Preference <input id="nopref-food" type="radio" checked name="food-type" /></label>
+                <label for="muslim-food">Muslim <input id="muslim-food" type="radio" name="food-type" /></label>
+                <label for="vegetarian-food" >Vegetarian <input id="vegetarian-food" type="radio" name="food-type" /></label>
+                <label for="other-food" >Other Preference <input id="other-food" type="radio" name="food-type" /></label>
         </fieldset>
-        </form>
-    </body>
-    <footer>
 
+        <fieldset>
+            <label><input type="text" />
+            </label>
+        </fieldset>
+
+        <fieldset>
+        <div id="tnccheck" > <input class="check" type="checkbox" required />   By ticking this box, you agree to our <a href="fakelink.tiyopaso.com"> terms & conditions</a> and will proceed participate to this survey-form(not)</div>
+
+        <label><input type="submit" class="submit" value="Submit"/></label>
+        </fieldset>
+            </form>
+    </body>
+
+
+    <footer>
+        <h2 >THIS IS THE FOOTER AREA</h2>
     </footer>
 </html>
