@@ -1,56 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="styles.css">
+<head>
+    <title>This is NOT A SURVEY FORM</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
         <fieldset>
-        <h1 id="title">This is not a Survey Form</h1>
-        <p id="description">But thank you anyways for taking your time on filling this page</p>
+            <h1 id="title">This is not a Survey Form</h1>
+            <p id="description">But thank you anyways for taking your time on filling this page</p>
         </fieldset>
-    </head>
+</head>
 
 
-    <body>
+<body>
+    <form id="survey-form" method="post" action="fakelinkaswell.tiyopaso.com" >
         <fieldset class="bodybox">
-            <form id="survey-form" method="post" action="fakelinkaswell.tiyopaso.com" >
             <label id="name-label">Please enter your full name: <input class="boxes" id="name" type="text" placeholder="eg. Tiyo Paso" required /></label>
             <label id="email-label">Please enter your email address: <input class="boxes" id="email" type="email" placeholder="eg. tiyopaso@example.com" required /></label>
-            <label id="numebr-label">Please enter your current age (as of this year): <input class="boxes" id="number" type="number" min="18" max="75" placeholder="eg. 25" /></label>
+            <label id="number-label">Please enter your current age (as of this year): <input class="boxes" id="number" type="number" min="18" max="75" placeholder="eg. 25" /></label>
         </fieldset>
         <fieldset>
             <label>What kind of device are you using right now?
-                <select>
-                    <option>(select one)</option>
-                    <option>Smartphone</option>
-                    <option>Computer/Laptop</option>
-                    <option>Other</option>
+                <select id="dropdown">
+                    <option value="none" >(select one)</option>
+                    <option value="sp" >Smartphone</option>
+                    <option value="pc" >Computer/Laptop</option>
+                    <option value="ot" >Other</option>
                 </select>
             </label>
         </fieldset>
-
         <fieldset>
             <label>Please select your dietary preference: </label>
-                <label for="nopref-food" >No Preference <input id="nopref-food" type="radio" checked name="food-type" /></label>
-                <label for="muslim-food">Muslim <input id="muslim-food" type="radio" name="food-type" /></label>
-                <label for="vegetarian-food" >Vegetarian <input id="vegetarian-food" type="radio" name="food-type" /></label>
-                <label for="other-food" >Other Preference <input id="other-food" type="radio" name="food-type" /></label>
+                <label for="nopref-food" >No Preference <input id="nopref-food" type="radio" checked name="food-type" value="nopref-food" /></label>
+                <label for="muslim-food">Muslim <input id="muslim-food" type="radio" name="food-type" value="muslim-food" /></label>
+                <label for="vegetarian-food" >Vegetarian <input id="vegetarian-food" type="radio" name="food-type" value="vegetarian-food" /></label>
+                <label for="other-food" >Other Preference <input id="other-food" type="radio" name="food-type" value="other-food" /></label>
         </fieldset>
-
         <fieldset>
-            <label><input type="text" />
+            <label>
+                Please your specific food preference if you selected "Other Preference"(otherwise, type NA): <textarea required></textarea>
             </label>
         </fieldset>
-
         <fieldset>
-        <div id="tnccheck" > <input class="check" type="checkbox" required />   By ticking this box, you agree to our <a href="fakelink.tiyopaso.com"> terms & conditions</a> and will proceed participate to this survey-form(not)</div>
+         <div id="tnccheck" > <input class="check" type="checkbox" required value="tnccb" />   By ticking this box, you agree to our <a href="fakelink.tiyopaso.com"> terms & conditions</a> and also this one here   <input class="check" type="checkbox" required value="fcb" />   just for fun! you will now proceed participate to this survey-form(not)</div>
 
-        <label><input type="submit" class="submit" value="Submit"/></label>
+            <label><input id="submit" type="submit" class="submit" value="Submit"/></label>
         </fieldset>
-            </form>
-    </body>
+    </form>
+</body>
 
 
     <footer>
-        <h2 >THIS IS THE FOOTER AREA</h2>
+        <fieldset>
+            <h2 >THIS IS THE FOOTER AREA</h2>
+        </fieldset>
     </footer>
 </html>

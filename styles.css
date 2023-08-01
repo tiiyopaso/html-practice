@@ -27,8 +27,8 @@ h1, p {
 
 form {
     width: 60%;
-    max-width: 500px;
-    min-width: 300px;
+    max-width: 800px;
+    min-width: 400px;
     margin: 0 auto;
     padding-bottom: 2em;
     text-align: center;
@@ -45,6 +45,13 @@ fieldset {
     border-bottom: 4px solid #3b3b4f;
     padding: 2rem;
     margin: auto;
+    min-width: 400px;
+    max-width: 800px;
+}
+
+input[type="textarea"] {
+    height: 150px;
+    width: 300px;
 }
 
 a {
